@@ -140,7 +140,7 @@ A: The chi-square distribution is itself skewed (supported on $[0, \infty)$ and 
 
 C: The [$p$-value] is the probability, under $H_0$, of observing a test statistic at least as extreme (in the direction of $H_1$) as the one actually observed.
 
-C: For a two-sided $z$-test with observed statistic $z_{\text{obs}}$, the $p$-value is $2 \cdot P(Z > |z_{\text{obs}}|) = 2\,[1 - \Phi(|z_{\text{obs}}|)]$, where $\Phi$ is the standard normal [CDF].
+C: For a two-sided $z$-test with observed statistic $z_{\text{obs}}$, the $p$-value is $2 \cdot P(Z > |z_{\text{obs}}|) = 2\,\lbrack 1 - \Phi(|z_{\text{obs}}|)\rbrack $, where $\Phi$ is the standard normal [CDF].
 
 C: For a right-sided $t$-test with observed $t_{\text{obs}}$ and $\nu = n - 1$ degrees of freedom, the $p$-value is $P(T_\nu > t_{\text{obs}})$, read from a [$t$-table] or software.
 

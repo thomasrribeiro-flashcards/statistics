@@ -24,7 +24,7 @@ A: An estimator is a function of the random sample, so before the data is observ
 Q: Before defining bias, predict: if an estimator tends to overshoot $\theta$ on average, should its "bias" be positive or negative?
 A: Positive — bias captures the systematic deviation of $E[\hat{\theta}]$ from $\theta$, so an estimator that overshoots on average has $E[\hat{\theta}] > \theta$ and hence positive bias.
 
-C: The [bias] of an estimator $\hat{\theta}$ of $\theta$ is $\mathrm{Bias}(\hat{\theta}) = E[\hat{\theta}] - \theta$, where $E[\hat{\theta}]$ is the expected value of the estimator and $\theta$ is the true parameter value.
+C: The [bias] of an estimator $\hat{\theta}$ of $\theta$ is $\mathrm{Bias}(\hat{\theta}) = E\lbrack \hat{\theta}\rbrack  - \theta$, where $E\lbrack \hat{\theta}\rbrack $ is the expected value of the estimator and $\theta$ is the true parameter value.
 
 Q: What does bias measure conceptually?
 A: The systematic error of an estimator — how far its average value (over all possible samples of size $n$) lies from the true parameter. It is a property of the estimator's distribution, not of any single estimate.
@@ -34,7 +34,7 @@ A: No. Bias is a property of the estimator (a random variable) across its entire
 
 ## 4.3 Unbiased Estimators
 
-C: An estimator $\hat{\theta}$ is called [unbiased] for $\theta$ if $E[\hat{\theta}] = \theta$ for every value of $\theta$ in the parameter space.
+C: An estimator $\hat{\theta}$ is called [unbiased] for $\theta$ if $E\lbrack \hat{\theta}\rbrack  = \theta$ for every value of $\theta$ in the parameter space.
 
 Q: Why is unbiasedness desirable?
 A: An unbiased estimator has no systematic error — averaged over many samples, it centers exactly on the true parameter. This makes it a natural starting point for estimation and a baseline for comparing other estimators.
@@ -57,7 +57,7 @@ C: The estimator $\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n (X_i - \bar{X})^2$ is
 Q: Before defining MSE, predict: how should a good measure of estimator accuracy combine bias and variance?
 A: It should penalize both — systematic error (bias) and random scatter (variance) both push estimates away from $\theta$. A natural combination is to square the total error and take its expectation, yielding MSE.
 
-C: The [mean squared error] of an estimator $\hat{\theta}$ is $\mathrm{MSE}(\hat{\theta}) = E[(\hat{\theta} - \theta)^2]$, where $\hat{\theta}$ is the estimator and $\theta$ is the true parameter.
+C: The [mean squared error] of an estimator $\hat{\theta}$ is $\mathrm{MSE}(\hat{\theta}) = E\lbrack (\hat{\theta} - \theta)^2\rbrack $, where $\hat{\theta}$ is the estimator and $\theta$ is the true parameter.
 
 C: The MSE of any estimator decomposes as $\mathrm{MSE}(\hat{\theta}) = \mathrm{Var}(\hat{\theta}) + [\mathrm{Bias}(\hat{\theta})]^2$, where the first term is the variance of the estimator and the second is the squared bias.
 
@@ -138,7 +138,7 @@ A: Since all competing estimators have the same mean (equal to $\theta$), the on
 Q: Why do we need a quantity that measures how much "information" data carries about $\theta$?
 A: Intuitively, a likelihood that changes sharply with $\theta$ near the truth is very informative — nearby parameter values produce very different data distributions, so the data pins down $\theta$ tightly. A dull, flat likelihood carries little information. Fisher information makes this precise.
 
-C: The [Fisher information] $I(\theta)$ for a single observation with density $f(x; \theta)$ is $I(\theta) = E\!\left[\left(\frac{\partial \log f(X; \theta)}{\partial \theta}\right)^2\right]$, where the expectation is taken with respect to $X \sim f(\cdot; \theta)$.
+C: The [Fisher information] $I(\theta)$ for a single observation with density $f(x; \theta)$ is $I(\theta) = E\!\left\lbrack \left(\frac{\partial \log f(X; \theta)}{\partial \theta}\right)^2\right\rbrack $, where the expectation is taken with respect to $X \sim f(\cdot; \theta)$.
 
 C: Under regularity conditions, Fisher information can also be written as $I(\theta) = -E\!\left[\frac{\partial^2 \log f(X; \theta)}{\partial \theta^2}\right]$, where the expectation is over $X \sim f(\cdot; \theta)$.
 

@@ -30,7 +30,7 @@ C: The [multiple linear regression model] with $p$ predictors is $Y = \beta_0 + 
 
 C: In the model $Y = \beta_0 + \beta_1 X_1 + \cdots + \beta_p X_p + \varepsilon$, the intercept $\beta_0$ is the [expected value of $Y$] when all predictors equal zero.
 
-C: In multiple regression, the error term $\varepsilon$ is assumed to have [mean zero] so that $E[Y \mid X_1, \ldots, X_p] = \beta_0 + \beta_1 X_1 + \cdots + \beta_p X_p$.
+C: In multiple regression, the error term $\varepsilon$ is assumed to have [mean zero] so that $E\lbrack Y \mid X_1, \ldots, X_p\rbrack  = \beta_0 + \beta_1 X_1 + \cdots + \beta_p X_p$.
 
 Q: What are the standard assumptions on the error term $\varepsilon$ in multiple linear regression?
 A: $\varepsilon$ has mean zero, constant variance $\sigma^2$ (homoscedasticity), is uncorrelated across observations, and — for exact inference — is normally distributed. The predictors are treated as fixed or exogenous (uncorrelated with $\varepsilon$).

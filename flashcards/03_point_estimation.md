@@ -41,7 +41,7 @@ A: An estimator is a function of random variables, so it has a distribution acro
 Q: What is the core idea behind the method of moments?
 A: The population moments $E[X^k]$ are functions of the unknown parameter(s). The sample moments $\frac{1}{n}\sum_{i=1}^{n} X_i^k$ are observable. By equating population moments to sample moments and solving for the parameters, we obtain estimators.
 
-C: The [$k$-th population moment] is $\mu_k = E[X^k]$, where $X$ is a random variable from the population distribution.
+C: The [$k$-th population moment] is $\mu_k = E\lbrack X^k\rbrack $, where $X$ is a random variable from the population distribution.
 
 C: The [$k$-th sample moment] is $m_k = \frac{1}{n}\sum_{i=1}^{n} X_i^k$, where $X_1, \ldots, X_n$ is an i.i.d. sample and $n$ is the sample size.
 

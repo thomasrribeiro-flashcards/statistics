@@ -32,14 +32,14 @@ C: In the model $Y = \beta_0 + \beta_1 X + \varepsilon$, the parameter $\beta_1$
 Q: What does the error term $\varepsilon$ represent in $Y = \beta_0 + \beta_1 X + \varepsilon$?
 A: The random deviation of an individual $Y$ from the mean line $\beta_0 + \beta_1 X$. It captures everything not explained by $X$: unmeasured variables, measurement noise, and intrinsic variability.
 
-C: The regression line $E[Y \mid X] = \beta_0 + \beta_1 X$ is called the [population regression line], because $\beta_0$ and $\beta_1$ are unknown population parameters.
+C: The regression line $E\lbrack Y \mid X\rbrack  = \beta_0 + \beta_1 X$ is called the [population regression line], because $\beta_0$ and $\beta_1$ are unknown population parameters.
 
 ## 11.3 Assumptions of the Simple Linear Model
 
 Q: Why must we state assumptions before estimating $\beta_0$ and $\beta_1$?
 A: The methods we use (least squares, t-tests, confidence intervals) are only guaranteed to work — unbiased, efficient, and correctly calibrated — if certain conditions hold. When assumptions fail, estimates can be biased or inferences misleading, so we check assumptions before trusting the output.
 
-C: The [linearity] assumption states that the mean of $Y$ is a linear function of $X$: $E[Y \mid X] = \beta_0 + \beta_1 X$.
+C: The [linearity] assumption states that the mean of $Y$ is a linear function of $X$: $E\lbrack Y \mid X\rbrack  = \beta_0 + \beta_1 X$.
 
 C: The [independence] assumption states that the errors $\varepsilon_i$ for different observations are independent of one another.
 
@@ -140,7 +140,7 @@ A: A range of plausible values for the true change in mean $Y$ per unit change i
 
 ## 11.10 Confidence vs Prediction Intervals
 
-C: A [confidence interval for the mean response] at $X = x_0$ estimates $E[Y \mid X = x_0]$, the average $Y$ over all units with predictor value $x_0$.
+C: A [confidence interval for the mean response] at $X = x_0$ estimates $E\lbrack Y \mid X = x_0\rbrack $, the average $Y$ over all units with predictor value $x_0$.
 
 C: A [prediction interval for an individual response] at $X = x_0$ estimates a single new $Y$ value for one unit with predictor value $x_0$.
 

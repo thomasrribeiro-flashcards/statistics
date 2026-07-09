@@ -18,7 +18,7 @@ C: Nonparametric tests typically operate on [ranks] or [signs] of the data rathe
 Q: What do nonparametric methods trade off for their weaker assumptions?
 A: Statistical power. When the parametric assumptions actually hold, the corresponding parametric test (e.g., $t$-test) is more powerful — it detects true effects at smaller sample sizes. Nonparametric tests pay a small efficiency cost to gain robustness.
 
-C: The [asymptotic relative efficiency] of the Wilcoxon signed-rank test compared to the $t$-test under normality is about $[0.955]$, meaning only a tiny power loss is incurred when the data are actually normal.
+C: The [asymptotic relative efficiency] of the Wilcoxon signed-rank test compared to the $t$-test under normality is about $\lbrack 0.955\rbrack $, meaning only a tiny power loss is incurred when the data are actually normal.
 
 Q: When should you prefer a nonparametric test over its parametric counterpart?
 A: When the sample is small and the data are skewed, heavy-tailed, or contain outliers; when the data are ordinal rather than interval; or when a normal-quantile plot shows strong departure from normality that a transformation cannot fix.
@@ -97,7 +97,7 @@ C: When there are no ties, Spearman's $\rho_s = 1 - \frac{6 \sum_{i=1}^{n} d_i^2
 Q: What does $\rho_s = 1$ mean, and how does it differ from $r = 1$?
 A: $\rho_s = 1$ means the two variables are related by a perfect monotone increasing function — as one increases, so does the other, but not necessarily linearly. $r = 1$ requires an exact linear relationship. Every $r = 1$ pattern gives $\rho_s = 1$, but not vice versa.
 
-C: Spearman's $\rho_s$ takes values in [$[-1, 1]$], with $-1$ indicating a perfect monotone decreasing relationship and $+1$ indicating a perfect monotone increasing one.
+C: Spearman's $\rho_s$ takes values in [$\lbrack -1, 1\rbrack $], with $-1$ indicating a perfect monotone decreasing relationship and $+1$ indicating a perfect monotone increasing one.
 
 ## 13.7 The Bootstrap Idea
 
@@ -121,7 +121,7 @@ A: Because the variance of an estimator typically depends on the sample size. Dr
 Q: What is the core idea of the bootstrap percentile confidence interval?
 A: Generate many bootstrap estimates $\hat{\theta}^{*(1)}, \ldots, \hat{\theta}^{*(B)}$ of the parameter, and use the empirical quantiles of this bootstrap distribution as the confidence interval endpoints. No formula for the standard error is needed.
 
-C: The [bootstrap percentile interval] at level $1 - \alpha$ is $[\hat{\theta}^*_{(\alpha/2)}, \hat{\theta}^*_{(1-\alpha/2)}]$, where $\hat{\theta}^*_{(p)}$ is the $p$th empirical quantile of the $B$ bootstrap replicates.
+C: The [bootstrap percentile interval] at level $1 - \alpha$ is $\lbrack \hat{\theta}^*_{(\alpha/2)}, \hat{\theta}^*_{(1-\alpha/2)}\rbrack $, where $\hat{\theta}^*_{(p)}$ is the $p$th empirical quantile of the $B$ bootstrap replicates.
 
 C: For a 95% bootstrap percentile CI, you use the [2.5th] and 97.5th percentiles of the bootstrap distribution as the lower and upper endpoints.
 
@@ -244,11 +244,11 @@ S:
 Q: Why summarize a posterior distribution with a single number at all?
 A: The full posterior captures all our uncertainty, but for reporting and decision-making we often need a point estimate and an interval. The choice of summary depends on loss: posterior mean minimizes squared-error loss, posterior median minimizes absolute-error loss, posterior mode (MAP) minimizes 0-1 loss.
 
-C: The [posterior mean] $E[\theta \mid x] = \int \theta\, \pi(\theta \mid x)\, d\theta$ is the Bayes estimator under squared-error loss.
+C: The [posterior mean] $E\lbrack \theta \mid x\rbrack  = \int \theta\, \pi(\theta \mid x)\, d\theta$ is the Bayes estimator under squared-error loss.
 
 C: The [posterior mode] (also called the [maximum a posteriori] or MAP estimate) is the value of $\theta$ that maximizes $\pi(\theta \mid x)$.
 
-C: A $100(1-\alpha)\%$ [credible interval] for $\theta$ is any interval $[a, b]$ with $P(a \leq \theta \leq b \mid x) = 1 - \alpha$, i.e., posterior probability $1 - \alpha$.
+C: A $100(1-\alpha)\%$ [credible interval] for $\theta$ is any interval $\lbrack a, b\rbrack $ with $P(a \leq \theta \leq b \mid x) = 1 - \alpha$, i.e., posterior probability $1 - \alpha$.
 
 C: A credible interval chosen so that the posterior density at both endpoints is equal — and the interval has shortest length — is called a [highest posterior density] (HPD) interval.
 
