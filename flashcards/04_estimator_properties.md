@@ -24,7 +24,7 @@ A: An estimator is a function of the random sample, so before the data is observ
 Q: Before defining bias, predict: if an estimator tends to overshoot $\theta$ on average, should its "bias" be positive or negative?
 A: Positive — bias captures the systematic deviation of $E[\hat{\theta}]$ from $\theta$, so an estimator that overshoots on average has $E[\hat{\theta}] > \theta$ and hence positive bias.
 
-C: The [bias] of an estimator $\hat{\theta}$ of $\theta$ is $\mathrm{Bias}(\hat{\theta}) = E\lbrack \hat{\theta}\rbrack  - \theta$, where $E\lbrack \hat{\theta}\rbrack $ is the expected value of the estimator and $\theta$ is the true parameter value.
+C: The [bias] of an estimator $\hat{\theta}$ of $\theta$ is $E\lbrack \hat{\theta}\rbrack  - \theta$, the difference between the estimator's expected value and the true parameter value.
 
 Q: What does bias measure conceptually?
 A: The systematic error of an estimator — how far its average value (over all possible samples of size $n$) lies from the true parameter. It is a property of the estimator's distribution, not of any single estimate.
@@ -78,7 +78,7 @@ A: The phenomenon that reducing an estimator's bias often increases its variance
 Q: Why might a biased estimator beat an unbiased one on MSE?
 A: Because MSE = variance + bias$^2$. If a biased estimator has much smaller variance than any unbiased competitor, the variance savings can outweigh the squared bias penalty, giving lower MSE overall.
 
-C: Adding a small amount of [bias] to an estimator can reduce its variance enough to lower the MSE — this is the bias-variance tradeoff.
+C: Adding a small amount of [bias] to an estimator can reduce its variance enough to lower its total MSE.
 
 Q: Give an intuitive example of the bias-variance tradeoff in practice.
 A: Shrinkage estimators (e.g., James–Stein, ridge regression) deliberately pull estimates toward zero or a prior guess. This introduces bias but sharply reduces variance, producing lower MSE than the unbiased MLE when the number of parameters is large.
@@ -96,11 +96,11 @@ A: For any tolerance $\epsilon > 0$, the chance that the estimator deviates from
 Q: Why is the sample mean $\bar{X}_n$ a consistent estimator of $\mu$?
 A: The weak law of large numbers states that if $X_1, X_2, \ldots$ are i.i.d. with finite mean $\mu$, then $\bar{X}_n$ converges in probability to $\mu$. So by definition, $\bar{X}_n$ is consistent for $\mu$.
 
-Q: Is an unbiased estimator automatically consistent?
-A: No. Unbiasedness only says $E[\hat{\theta}_n] = \theta$ for all $n$; it does not constrain the variance. If $\mathrm{Var}(\hat{\theta}_n)$ does not shrink to zero, the estimator can be unbiased yet scatter widely forever and fail to converge.
+Q: Why is an unbiased estimator not automatically consistent?
+A: Unbiasedness only says $E[\hat{\theta}_n] = \theta$ for all $n$; it does not constrain the variance. If $\mathrm{Var}(\hat{\theta}_n)$ does not shrink to zero, the estimator can be unbiased yet scatter widely forever and fail to converge.
 
-Q: Is a consistent estimator automatically unbiased?
-A: No. Consistent estimators may be biased at every finite $n$, as long as both the bias and the variance shrink to zero as $n \to \infty$. For example, $\frac{1}{n}\sum (X_i - \bar{X})^2$ is biased for $\sigma^2$ but consistent.
+Q: Why can a consistent estimator fail to be unbiased?
+A: Consistent estimators may be biased at every finite $n$, as long as both the bias and the variance shrink to zero as $n \to \infty$. For example, $\frac{1}{n}\sum (X_i - \bar{X})^2$ is biased for $\sigma^2$ but consistent.
 
 ## 4.7 Sufficient Condition for Consistency
 

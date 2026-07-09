@@ -88,7 +88,7 @@ A: A statistic is robust if extreme values have limited influence on it. The med
 Q: Predict: in the dataset $\{1, 2, 3, 4, 100\}$, how do the mean and median compare?
 A: Median is 3 (the middle value after sorting). Mean is $(1+2+3+4+100)/5 = 22$. The outlier 100 pulls the mean up dramatically while leaving the median untouched.
 
-C: The [breakdown point] of a statistic is the smallest fraction of observations that can be made arbitrarily extreme before the statistic itself becomes arbitrary — the mean has a breakdown point of $0$, and the median has a breakdown point of $50\%$.
+C: The [breakdown point] of a statistic is the smallest fraction of observations that can be made arbitrarily extreme before the statistic itself becomes arbitrary; this fraction is $0$ for the mean and $50\%$ for the median.
 
 Q: Why do we often report the median for income data rather than the mean?
 A: Income distributions are strongly right-skewed: a small number of very high earners pull the mean far above where most people live. The median corresponds to the person "in the middle" and better reflects a typical income.
@@ -98,7 +98,7 @@ A: Income distributions are strongly right-skewed: a small number of very high e
 Q: Why is a measure of center incomplete without a measure of spread?
 A: Two datasets can share the same mean or median and yet differ dramatically — one tightly clustered, one widely dispersed. Spread quantifies how far observations typically stray from the center, which controls predictability and the precision of estimates.
 
-C: The [range] of a dataset is the difference between the maximum and minimum values: $\text{range} = x_{\max} - x_{\min}$, where $x_{\max}$ and $x_{\min}$ are the largest and smallest observations.
+C: The [range] of a dataset is the difference between the maximum and minimum values, $x_{\max} - x_{\min}$, where $x_{\max}$ and $x_{\min}$ are the largest and smallest observations.
 
 C: The [interquartile range] (IQR) is $\text{IQR} = Q_3 - Q_1$, where $Q_1$ is the 25th percentile and $Q_3$ is the 75th percentile.
 
@@ -142,7 +142,7 @@ A: The median cuts the data in half, but sometimes we want finer locations — "
 
 C: The [$p$-th quantile] of a dataset is the value below which a fraction $p$ of the data falls (with $0 \le p \le 1$).
 
-C: A [percentile] is a quantile expressed as a percentage: the 25th percentile equals the $0.25$ quantile.
+C: A [percentile] is a quantile expressed as a percentage out of 100 (e.g., the $0.25$ quantile corresponds to the 25th).
 
 C: The first quartile $Q_1$ is the [25th percentile], the second quartile $Q_2$ is the median (50th percentile), and the third quartile $Q_3$ is the 75th percentile.
 
@@ -181,8 +181,8 @@ A: IQR is robust: a single extreme value cannot inflate it, whereas one outlier 
 Q: When comparing three groups, why is a side-by-side boxplot often more informative than three separate histograms?
 A: Boxplots align center (median) and spread (IQR) on the same axis, making differences in location, spread, and skewness immediately visible. Three separate histograms require the eye to compare shapes across panels, which is harder.
 
-Q: Does "outlier" always mean "bad data"?
-A: No. An outlier is simply an observation far from the bulk of the data. It could be a data-entry error (remove it), a true but rare event (keep it and investigate), or a signal that the model is wrong (reconsider the model). Flagging prompts investigation, not automatic deletion.
+Q: Why does flagging a value as an outlier not automatically mean it is bad data?
+A: An outlier is simply an observation far from the bulk of the data. It could be a data-entry error (remove it), a true but rare event (keep it and investigate), or a signal that the model is wrong (reconsider the model). Flagging prompts investigation, not automatic deletion.
 
 ## 1.11 Scatterplots and Sample Correlation
 
