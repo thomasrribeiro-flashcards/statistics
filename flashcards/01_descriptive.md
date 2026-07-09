@@ -1,7 +1,6 @@
 +++
-name = "Statistics"
-subject = "Math"
 order = 1
+subject = "Math"
 tags = ["math", "statistics", "descriptive", "mean", "variance", "correlation", "eda"]
 +++
 
