@@ -1,6 +1,6 @@
 +++
 order = 5
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "statistics", "confidence-interval", "pivot", "t-distribution", "sample-size"]
 +++
 

@@ -1,6 +1,6 @@
 +++
 order = 1
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "statistics", "descriptive", "mean", "variance", "correlation", "eda"]
 +++
 

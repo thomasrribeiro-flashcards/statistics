@@ -1,6 +1,6 @@
 +++
 order = 10
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "statistics", "anova", "f-test", "sum-of-squares", "multiple-comparisons"]
 +++
 

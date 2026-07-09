@@ -1,6 +1,6 @@
 +++
 order = 6
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "statistics", "hypothesis-testing", "p-value", "type-i", "type-ii", "power", "neyman-pearson"]
 +++
 

@@ -1,6 +1,6 @@
 +++
 order = 2
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "statistics", "sampling-distribution", "clt", "chi-square", "t-distribution", "f-distribution"]
 +++
 

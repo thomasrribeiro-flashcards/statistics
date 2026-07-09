@@ -1,6 +1,6 @@
 +++
 order = 11
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "statistics", "regression", "least-squares", "residuals", "r-squared"]
 +++
 
