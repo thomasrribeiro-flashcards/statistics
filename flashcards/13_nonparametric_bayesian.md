@@ -1,6 +1,6 @@
 +++
 order = 13
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "statistics", "nonparametric", "bootstrap", "bayesian", "conjugate-prior", "credible-interval"]
 +++
 

@@ -1,6 +1,6 @@
 +++
 order = 3
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "statistics", "estimation", "mle", "method-of-moments", "likelihood"]
 +++
 

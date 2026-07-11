@@ -1,6 +1,6 @@
 +++
 order = 4
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "statistics", "estimators", "bias", "mse", "consistency", "efficiency", "cramer-rao"]
 +++
 

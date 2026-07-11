@@ -1,6 +1,6 @@
 +++
 order = 9
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "statistics", "chi-square", "goodness-of-fit", "independence", "contingency-table"]
 +++
 

@@ -1,6 +1,6 @@
 +++
 order = 7
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "statistics", "one-sample-test", "z-test", "t-test", "proportion", "variance"]
 +++
 
